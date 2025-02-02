@@ -36,8 +36,8 @@ if decoded:
     cv2.destroyAllWindows()
 
     # Save the annotated image
-    output_file = "decoded_aztec.png"
-    cv2.imwrite(output_file, image)
-    print(f"Annotated image saved as {output_file}")
+    out_file = "decoded_aztec.png"
+    cv2.imwrite(out_file, image)
+    print(f"Annotated image saved as {out_file}")
 else:
     print("Failed to decode the Aztec code.")
